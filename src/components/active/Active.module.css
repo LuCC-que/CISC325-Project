@@ -1,0 +1,93 @@
+body {
+  margin: 0%;
+}
+.active {
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+
+.headerdisplay {
+  background-color: blueviolet;
+  height: 3vh;
+  width: 100%;
+}
+
+.subContainer {
+  display: flex;
+  background-color: bisque;
+  height: 100%;
+  width: 100%;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: azure;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+/*
+  navbar items
+*/
+
+/*
+  temperture
+*/
+
+.temperture {
+  height: 50%;
+  width: 80%;
+  margin-left: 15%;
+  margin-top: 5%;
+  background-color: blanchedalmond;
+  border-radius: 10%;
+}
+
+/*
+  tempertureExpand
+*/
+
+.Expand {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.ExpandContent {
+  height: 100%;
+  width: 70%;
+  background-color: brown;
+}
+
+.returnToHome {
+  height: 100%;
+  width: 20%;
+  background-color: aqua;
+}
+
+/*
+  food-recommandation
+*/
+
+.foodRecommandation {
+  height: 90%;
+  width: 80%;
+  background-color: bisque;
+  border-radius: 5%;
+}
