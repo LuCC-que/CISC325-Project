@@ -14,7 +14,7 @@ const Active = (props) => {
     const identifier = setTimeout(() => {
       console.log("asdsad");
       setActive(false);
-    }, 10000000);
+    }, 1000000);
 
     return () => {
       clearTimeout(identifier);
