@@ -1,0 +1,58 @@
+.notib {
+  background-color: rgb(247, 222, 240);
+  height: 100px;
+  width: 1000px;
+  margin-top: 5%;
+  margin-left: 9%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text {
+  visibility: hidden;
+}
+
+.notib:hover {
+  position: relative;
+  height: 170px;
+  width: 1000px;
+}
+
+.notib:hover .text {
+  visibility: visible;
+}
+
+.notibItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  width: 80px;
+}
+
+.eme {
+  background-color: rgb(226, 153, 153);
+  height: 100px;
+  width: 1000px;
+  margin-top: 5%;
+  margin-left: 9%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text {
+  visibility: hidden;
+}
+
+.eme:hover {
+  position: relative;
+  height: 170px;
+  width: 1000px;
+}
+
+.eme:hover .text {
+  visibility: visible;
+}
