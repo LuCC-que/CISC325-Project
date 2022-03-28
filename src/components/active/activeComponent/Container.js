@@ -1,18 +1,57 @@
 import classes from "../Active.module.css";
-import Temperture from "./SubContainer/Temperture";
 import SubContainer from "./SubContainer/SubContainer";
-import { useReducer } from "react";
+import "./Container.css";
 
-const container = (props) => {
+import { useEffect } from "react";
+
+const Container = (props) => {
+  useEffect(() => {
+    Date.prototype.format = function (fmt) {
+      var o = {
+        "h+": this.getHours(),
+        "m+": this.getMinutes(),
+        "s+": this.getSeconds(),
+      };
+      if (/(y+)/.test(fmt))
+        fmt = fmt.replace(
+          RegExp.$1,
+          (this.getFullYear() + "").substr(4 - RegExp.$1.length)
+        );
+      for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt))
+          fmt = fmt.replace(
+            RegExp.$1,
+            RegExp.$1.length == 1
+              ? o[k]
+              : ("00" + o[k]).substr(("" + o[k]).length)
+          );
+      return fmt;
+    };
+    setInterval(
+      "document.getElementById('dateTime').innerHTML = (new Date()).format('hh:mm:ss');",
+      1000
+    );
+  }, []);
   return (
     <div className={classes.container} onClick={props.onClicking}>
-      <header
-        className={classes.headerdisplay}
-        onClick={props.onClicking}
-      ></header>
+      <header className={classes.headerdisplay} onClick={props.onClicking}>
+        <strong>
+          <div id="dateTime"></div>
+        </strong>
+
+        <div className="greeting">
+          <p>
+            <strong>Hello User</strong>
+          </p>
+        </div>
+
+        <div className="searchBar">
+          <input type="text" name="firstName" placeholder="Search" />
+        </div>
+      </header>
       <SubContainer onClicking={props.onClicking}></SubContainer>
     </div>
   );
 };
 
-export default container;
+export default Container;

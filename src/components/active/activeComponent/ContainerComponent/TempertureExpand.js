@@ -1,17 +1,78 @@
-import classes from "./TempertureExpand.module.css";
+import "./TempertureExpand.css";
+import { useEffect } from "react";
 
 const TempExpand = () => {
+  useEffect(() => {
+    var range = document.getElementById("range");
+    var thumb = document.getElementById("thumb");
+    var track = document.getElementById("track-inner");
+    var selectValue = document.getElementById("selectValue");
+    var rangeF = document.getElementById("rangeF");
+    var thumbF = document.getElementById("thumbF");
+    var trackF = document.getElementById("track-innerF");
+    var selectValueF = document.getElementById("selectValueF");
+
+    range.oninput = function () {
+      thumb.style.left = this.value + "%";
+      thumb.style.transform = "translate(-" + this.value + "%, -50%)";
+      track.style.width = this.value + "%";
+      selectValue.innerHTML = this.value / 10 - 5 + "°C";
+    };
+
+    rangeF.oninput = function () {
+      thumbF.style.left = this.value + "%";
+      thumbF.style.transform = "translate(-" + this.value + "%, -50%)";
+      trackF.style.width = this.value + "%";
+      selectValueF.innerHTML = this.value / 10 - 15 + "°C";
+    };
+  }, []);
+
   return (
-    <div>
-      <h1 className={classes.title}>Temperture center</h1>
-      <p className={classes.title}>
-        啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-        啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-        啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-        啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-        啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦啦
-        啦啦啦啦啦啦啦
-      </p>
+    <div className="frame">
+      <div id="sub-title">Fridge</div>
+      <div id="sub-title-light">Temperture adjustment</div>
+
+      <div className="wrap">
+        <input
+          type="range"
+          className="range"
+          min="0"
+          max="100"
+          step="10"
+          value="0"
+          id="range"
+        />
+        <div className="track">
+          <div className="track-inner" id="track-inner"></div>
+        </div>
+        <div className="thumb" id="thumb">
+          <div id="selectValue">-5°C</div>
+        </div>
+      </div>
+
+      <div className="img-refri"></div>
+      <div className="refri">Refridgerator</div>
+
+      <div className="wrapF">
+        <input
+          type="range"
+          className="rangeF"
+          min="0"
+          max="100"
+          step="10"
+          value="0"
+          id="rangeF"
+        />
+        <div className="trackF">
+          <div className="track-innerF" id="track-innerF"></div>
+        </div>
+        <div className="thumbF" id="thumbF">
+          <div id="selectValueF">-15°C</div>
+        </div>
+      </div>
+
+      <div className="img-freezer"></div>
+      <div className="freezer">Freezer</div>
     </div>
   );
 };

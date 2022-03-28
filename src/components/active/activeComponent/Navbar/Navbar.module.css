@@ -7,6 +7,8 @@
   background-color: white;
   height: 100%;
   width: 5vw;
+  transition: 200ms;
+  z-index: 1;
 }
 
 .navbarExpand {
@@ -14,6 +16,7 @@
   align-items: flex-start;
   padding-left: 8px;
   transition: 500ms;
+  z-index: 1;
 }
 .settingItems {
   display: flex;

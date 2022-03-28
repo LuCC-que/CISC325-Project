@@ -1,0 +1,39 @@
+body {
+  margin: 0%;
+}
+
+/* used to let current time on the contre of the screen*/
+#dateTime {
+  text-align: center;
+}
+
+/*appear to the left of the screen*/
+.greeting {
+  position: fixed;
+  left: 500px;
+}
+
+.searchBar {
+  position: fixed;
+  right: 200px;
+}
+
+.qrCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 700px;
+  border-radius: 100px;
+  background-color: rgb(18, 228, 228);
+}
+.QRcode img {
+  border-radius: 100px;
+}
+.headerdisplay {
+  background-color: white;
+}
+
+.button {
+  background-color: rgb(236, 228, 228);
+}
