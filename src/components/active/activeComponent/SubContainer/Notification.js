@@ -1,11 +1,27 @@
 import classes from "../../Active.module.css";
+import alarm from '../../alarm.png';
+import setting from '../../setting.svg';
+
 
 const Notification = (props) => {
   return (
     <div className={classes.temperture} onClick={props.onClick}>
-      <h1>Notification</h1>
-      <div></div>
-      <p>asdsadsadsadas</p>
+      <h1 className={classes.boxText}> Notification</h1>
+      <h4 className={classes.boxSubText}> Notify food conditions</h4>
+      <div className={classes.notiBoxList}>
+        <div className={`${classes.alarmBox} ${classes.notiBox}`}>
+          <img src={alarm} className={classes.alarmImage}/>
+          <div>Salmon</div>
+        </div>
+        <div className={`${classes.alarmBox} ${classes.notiBox}`}>
+          <img src={alarm} className={classes.alarmImage}/>
+          <div>Freezer</div>
+        </div>
+        <div className={classes.notiBox}>
+          {/* <img src={setting} className={classes.alarmImage}/> */}
+          <div>Wifi Disconnected</div>
+        </div>
+      </div>
     </div>
   );
 };

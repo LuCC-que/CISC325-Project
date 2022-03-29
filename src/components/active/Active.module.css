@@ -4,7 +4,7 @@ body {
 .active {
   display: flex;
   justify-content: space-between;
-  background-color: aqua;
+  background-color: rgb(250, 251, 255);
   height: 100vh;
   width: 100vw;
 }
@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: azure;
+  background-color: rgb(250, 251, 255);
   height: 100%;
   width: 100%;
   border: 1px solid black;
@@ -49,12 +49,73 @@ body {
 */
 
 .temperture {
-  height: 50%;
-  width: 80%;
+  height: 45%;
+  width: 70%;
   margin-left: 15%;
-  margin-top: 5%;
-  background-color: blanchedalmond;
-  border-radius: 10%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  box-shadow: 0 0 60px #e2ecf9;
+}
+
+
+.boxText {
+  margin-left: 10%;
+}
+
+.boxSubText {
+  margin-left: 10%;
+  opacity: 30%;
+}
+
+.f1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 6%;
+}
+
+.fridgeImage {
+  width: 30%;
+  background-color: aqua;
+  border-radius: 20%;
+}
+
+.fridgeVal {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  padding: 5%;
+  background-color: #f2efff;
+  border-radius: 20%;
+  font-size: 200%;
+}
+
+.notiBoxList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.notiBox {
+  background-color: #F2EFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 60px;
+  margin: 2.5%;
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.alarmBox {
+  background-color: #F8BAC1;
+}
+
+.alarmImage {
+  width: 15%;
 }
 
 /*
@@ -86,8 +147,9 @@ body {
 */
 
 .foodRecommandation {
-  height: 90%;
+  height: 95%;
   width: 80%;
-  background-color: bisque;
-  border-radius: 5%;
+  background-color: #fff;  
+  box-shadow: 0 0 60px #e2ecf9;
+  border-radius: 15px;
 }
