@@ -9,6 +9,7 @@
   width: 5vw;
   transition: 200ms;
   z-index: 1;
+  box-shadow: 0 110px 60px #E2ECF9;
 }
 
 .navbarExpand {
@@ -25,11 +26,11 @@
   height: 15%;
   width: 80px;
   margin-bottom: 5%;
-  background-color: red;
+  background-color: #FFF;
 }
 
 .settingItem {
-  background-color: aqua;
+  background-color: #FFF;
   height: 70px;
   width: 70px;
   border: solid black 1px;
@@ -42,7 +43,7 @@
   justify-content: space-evenly;
   align-items: center;
   margin-top: 4%;
-  background-color: aliceblue;
+  background-color: #FFF;
   height: 80%;
   width: 80px;
 }

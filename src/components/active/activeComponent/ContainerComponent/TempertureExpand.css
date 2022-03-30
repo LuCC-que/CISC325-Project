@@ -3,20 +3,21 @@
 */
 .frame {
   width: 100%;
-  height: 85%;
+  height: 90%;
   position: relative;
-  top: 8%;
-  left: 10%;
+  top: 5%;
+  left: 18%;
   background-color: #fff;
   border-radius: 15px;
   z-index: 0;
+  box-shadow: 0 0 60px #E2ECF9;
 }
 
 #sub-title {
   position: absolute;
   top: 10%;
   left: 10%;
-  font-size: x-large;
+  font-size: xx-large;
   font-weight: bold;
 }
 
@@ -68,7 +69,7 @@
 
 .track {
   width: 100%;
-  height: 15px;
+  height: 20px;
   background: #dddddd;
   border-radius: 10px;
   position: absolute;
@@ -80,13 +81,13 @@
   width: 0;
   height: 100%;
   border-radius: 10px;
-  background: linear-gradient(-90deg, rgb(88, 244, 150), rgb(88, 197, 244));
+  background: linear-gradient(-90deg, #72EFDD, #48BFE3);
 }
 
 .thumb {
-  width: 16px;
-  height: 16px;
-  background: rgb(88, 244, 150);
+  width: 26px;
+  height: 26px;
+  background: #72EFDD;
   border-radius: 50%;
   border: 5px solid #535353;
   position: absolute;
@@ -102,7 +103,7 @@
   right: -15px;
   position: absolute;
   bottom: 40px;
-  background: rgb(88, 244, 150);
+  background: #72EFDD;
   border-radius: 6px;
   text-align: center;
   line-height: 45px;
@@ -113,7 +114,7 @@
 
 #selectValue::after {
   content: "";
-  border-left: 17px solid rgb(88, 244, 150);
+  border-left: 17px solid #72EFDD;
   border-top: 24px solid #fff;
   border-bottom: 24px solid #fff;
   position: absolute;
@@ -133,7 +134,7 @@
   background-position: center;
   border-radius: 8px;
   bottom: 12%;
-  left: 62%;
+  left: 62.5%;
 }
 
 .freezer {
@@ -141,7 +142,7 @@
   font-size: large;
   font-weight: bold;
   bottom: 6%;
-  left: 67%;
+  left: 67.5%;
 }
 
 .wrapF {
@@ -164,7 +165,7 @@
 
 .trackF {
   width: 100%;
-  height: 15px;
+  height: 20px;
   background: #dddddd;
   border-radius: 10px;
   position: absolute;
@@ -176,13 +177,13 @@
   width: 0;
   height: 100%;
   border-radius: 10px;
-  background: linear-gradient(-90deg, rgb(96, 217, 210), rgb(92, 179, 238));
+  background: linear-gradient(-90deg, #48BFE3, #5390D9);
 }
 
 .thumbF {
-  width: 16px;
-  height: 16px;
-  background: rgb(96, 217, 210);
+  width: 26px;
+  height: 26px;
+  background: #48BFE3;
   border-radius: 50%;
   border: 5px solid #535353;
   position: absolute;
@@ -198,7 +199,7 @@
   right: -27px;
   position: absolute;
   bottom: 50px;
-  background: rgb(96, 217, 210);
+  background: #48BFE3;
   border-radius: 6px;
   text-align: center;
   line-height: 45px;
@@ -209,7 +210,7 @@
 
 #selectValueF::after {
   content: "";
-  border-left: 18px solid rgb(96, 217, 210);
+  border-left: 18px solid #48BFE3;
   border-top: 24px solid #fff;
   border-bottom: 24px solid #fff;
   position: absolute;

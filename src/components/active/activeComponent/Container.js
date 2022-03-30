@@ -46,7 +46,8 @@ const Container = (props) => {
         </div>
 
         <div className="searchBar">
-          <input type="text" name="firstName" placeholder="Search" />
+          <div className="imgSearch"></div>
+          <input type="text" name="firstName" placeholder="Search" id="searchContent"/>
         </div>
       </header>
       <SubContainer onClicking={props.onClicking}></SubContainer>

@@ -37,7 +37,6 @@ body {
   background-color: rgb(250, 251, 255);
   height: 100%;
   width: 100%;
-  border: 1px solid black;
 }
 
 /*
@@ -49,9 +48,9 @@ body {
 */
 
 .temperture {
-  height: 45%;
-  width: 70%;
-  margin-left: 15%;
+  height: 40%;
+  width: 60%;
+  margin-left: 30%;
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   box-shadow: 0 0 60px #e2ecf9;
@@ -77,18 +76,21 @@ body {
 
 .fridgeImage {
   width: 30%;
-  background-color: aqua;
-  border-radius: 20%;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 12px;
 }
 
 .fridgeVal {
   display: flex;
   justify-content: center;
   width: 30%;
-  padding: 5%;
-  background-color: #f2efff;
-  border-radius: 20%;
+  height: 75px;
+  padding: 3%;
+  background-color: #E3F2FD;
+  border-radius: 12px;
   font-size: 200%;
+  font-weight: bold;
 }
 
 .notiBoxList {
@@ -99,12 +101,12 @@ body {
 }
 
 .notiBox {
-  background-color: #F2EFFF;
+  background-color: #E3F2FD;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 70%;
-  height: 60px;
+  height: 45px;
   margin: 2.5%;
   padding: 2%;
   border-radius: 15px;
@@ -137,9 +139,34 @@ body {
 }
 
 .returnToHome {
-  height: 100%;
-  width: 20%;
-  background-color: aqua;
+  position: relative;
+  top: 5%;
+  right: 0%;
+  height: 90%;
+  width: 10%;
+  border-radius: 15px;
+  background-color: #FFF;
+  background-position: center;
+  box-shadow: 0 0 60px #E2ECF9;
+}
+
+.imgHome {
+  height: 90px;
+  width: 96px;
+  position: absolute;
+  background-image: url(./img/homepage.png);
+  background-size: cover;
+  background-position: center;
+  top: 40%;
+  left: 25%;
+}
+
+.textHome {
+  position: absolute;
+  top: 52%;
+  left: 32%;
+  font-size: x-large;
+  font-weight: bold;
 }
 
 /*
@@ -147,9 +174,55 @@ body {
 */
 
 .foodRecommandation {
-  height: 95%;
+  height: 90%;
+  width: 85%;
+  background-color: #fff;  
+  box-shadow: 0 0 60px #e2ecf9;
+  border-radius: 15px;
+}
+
+/*
+  note-pad
+*/
+
+.notePad {
+  height: 90%;
   width: 80%;
   background-color: #fff;  
   box-shadow: 0 0 60px #e2ecf9;
   border-radius: 15px;
+}
+
+.listBox1 {
+  margin: 9.5%;
+  height: 40%;
+  width: 80%;
+  background-color: #E3F2FD;
+  border-radius: 15px;
+  box-shadow: 5px 5px 7px #e2ecf9;
+}
+
+.listBox2 {
+  margin: 9.5%;
+  height: 35%;
+  width: 80%;
+  background-color: #E3F2FD;
+  border-radius: 15px;
+  box-shadow: 5px 5px 7px #e2ecf9;
+}
+
+.listTitle {
+  margin: 3%;
+  padding: 3%;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 70px 0;
+}
+
+td {
+  padding: 8px 0;
+  font-size: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
 }

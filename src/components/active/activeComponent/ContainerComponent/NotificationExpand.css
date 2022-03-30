@@ -1,26 +1,16 @@
 .notib {
-  background-color: rgb(247, 222, 240);
+  background-color: rgb(242, 239, 255);
   height: 100px;
   width: 1000px;
-  margin-top: 5%;
-  margin-left: 9%;
+
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 10px 10px 2px #888888;
 }
 .text {
   visibility: hidden;
-}
-
-.notib:hover {
-  position: relative;
-  height: 170px;
-  width: 1000px;
-}
-
-.notib:hover .text {
-  visibility: visible;
 }
 
 .notibItems {
@@ -33,26 +23,16 @@
 }
 
 .eme {
-  background-color: rgb(226, 153, 153);
+  background-color: rgb(284, 186, 193);
   height: 100px;
   width: 1000px;
-  margin-top: 5%;
-  margin-left: 9%;
+
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 10px 10px 2px #888888;
 }
 .text {
   visibility: hidden;
-}
-
-.eme:hover {
-  position: relative;
-  height: 170px;
-  width: 1000px;
-}
-
-.eme:hover .text {
-  visibility: visible;
 }

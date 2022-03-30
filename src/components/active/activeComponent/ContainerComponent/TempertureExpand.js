@@ -16,20 +16,20 @@ const TempExpand = () => {
       thumb.style.left = this.value + "%";
       thumb.style.transform = "translate(-" + this.value + "%, -50%)";
       track.style.width = this.value + "%";
-      selectValue.innerHTML = this.value / 10 - 5 + "°C";
+      selectValue.innerHTML = parseInt(this.value / 10) - 5 + "°C";
     };
 
     rangeF.oninput = function () {
       thumbF.style.left = this.value + "%";
       thumbF.style.transform = "translate(-" + this.value + "%, -50%)";
       trackF.style.width = this.value + "%";
-      selectValueF.innerHTML = this.value / 10 - 15 + "°C";
+      selectValueF.innerHTML = parseInt(this.value / 10) - 15 + "°C";
     };
   }, []);
 
   return (
     <div className="frame">
-      <div id="sub-title">Fridge</div>
+      <div id="sub-title">Temperture</div>
       <div id="sub-title-light">Temperture adjustment</div>
 
       <div className="wrap">
@@ -38,7 +38,7 @@ const TempExpand = () => {
           className="range"
           min="0"
           max="100"
-          step="10"
+          step="0.01"
           value="0"
           id="range"
         />
@@ -59,7 +59,7 @@ const TempExpand = () => {
           className="rangeF"
           min="0"
           max="100"
-          step="10"
+          step="0.01"
           value="0"
           id="rangeF"
         />
