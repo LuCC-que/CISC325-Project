@@ -2,57 +2,58 @@ import classes from "./Navbar.module.css";
 import WIFI from "./WIFI";
 import Dark from "./Dark";
 import Food from "./Food";
+import Storage from "./Storage.js";
 
 let predefinedValue = [
   {
     img: "./image/apple.png",
-    Name: "Name : Apple",
-    QLT: "QLT : 300",
-    QTY: "QTY : Bad",
-    Weight: "Weight : 3g",
-    Cal: "Cal : 400cal",
+    Name: "Apple",
+    QTY: "300",
+    QLT: "Good",
+    Weight: "3g",
+    Cal: "400cal",
   },
   {
     img: "./image/bread.png",
-    Name: "Name : bread",
-    QLT: "QLT : 4",
-    QTY: "QTY : Bad",
-    Weight: "Weight : 300g",
-    Cal: "Cal : 300cal",
+    Name: "Bread",
+    QTY: "300",
+    QLT: "Bad",
+    Weight: "300g",
+    Cal: "300cal",
   },
   {
     img: "./image/burger.png",
-    Name: "Name : burger",
-    QLT: "QLT : 1",
-    QTY: "QTY : Bad",
-    Weight: "Weight : 33g",
-    Cal: "Cal : 41200cal",
+    Name: "Burger",
+    QTY: "300",
+    QLT: "Good",
+    Weight: "33g",
+    Cal: "41200cal",
   },
 
   {
     img: "./image/carrot.png",
-    Name: "Name : carrot",
-    QLT: "QLT : 12213",
-    QTY: "QTY : Good",
-    Weight: "Weight : 33224g",
-    Cal: "Cal : 401230cal",
+    Name: "Carrot",
+    QTY: "300",
+    QLT: "Good",
+    Weight: "33224g",
+    Cal: "401230cal",
   },
   {
     img: "./image/fish.png",
-    Name: "Name : Fish",
-    QLT: "QLT : 3",
-    QTY: "QTY : GOOD",
-    Weight: "Weight : 3g",
-    Cal: "Cal : 300cal",
+    Name: "Fish",
+    QTY: "300",
+    QLT: "Good",
+    Weight: "3g",
+    Cal: "300cal",
   },
 
   {
     img: "./image/egg.png",
-    Name: "Name : Egg",
-    QLT: "QLT : 123",
-    QTY: "QTY : Good",
-    Weight: "Weight : 3g",
-    Cal: "Cal : 400cal",
+    Name: "Egg",
+    QTY: "300",
+    QLT: "Bad",
+    Weight: "3g",
+    Cal: "400cal",
   },
 ];
 
@@ -86,7 +87,10 @@ const navbar = (props) => {
         <WIFI></WIFI>
         <Dark></Dark>
       </div>
-      <div className={classes.foodItems}>{foodList}</div>
+      <div className={classes.foodItems}>
+        {foodList}
+        <Storage predefinedValue={predefinedValue}></Storage>
+      </div>
     </nav>
   );
 };

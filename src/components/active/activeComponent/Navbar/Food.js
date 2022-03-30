@@ -24,11 +24,11 @@ const Food = (props) => {
           className={classes.icon}
         ></img>
       )}
-      <a className={classes.text}> {props.itemInfo.Name}</a>
-      <a className={classes.text}> {props.itemInfo.QLT}</a>
-      <a className={classes.text}> {props.itemInfo.QTY}</a>
-      <a className={classes.text}> {props.itemInfo.Weight}</a>
-      <a className={classes.text}> {props.itemInfo.Cal}</a>
+      <a className={classes.text}> Name : {props.itemInfo.Name}</a>
+      <a className={classes.text}> QLT : {props.itemInfo.QLT}</a>
+      <a className={classes.text}> QTY : {props.itemInfo.QTY}</a>
+      <a className={classes.text}> Weight : {props.itemInfo.Weight}</a>
+      <a className={classes.text}> Cal : {props.itemInfo.Cal}</a>
     </div>
   );
 };
