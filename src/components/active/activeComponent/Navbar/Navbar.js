@@ -1,9 +1,11 @@
 import classes from "./Navbar.module.css";
+import WIFI from "./WIFI";
+import Dark from "./Dark";
 import Food from "./Food";
 
 let predefinedValue = [
   {
-    img: "./svg/apple.png",
+    img: "./image/apple.png",
     Name: "Name : Apple",
     QLT: "QLT : 300",
     QTY: "QTY : Bad",
@@ -11,7 +13,7 @@ let predefinedValue = [
     Cal: "Cal : 400cal",
   },
   {
-    img: "./svg/bread.png",
+    img: "./image/bread.png",
     Name: "Name : bread",
     QLT: "QLT : 4",
     QTY: "QTY : Bad",
@@ -19,7 +21,7 @@ let predefinedValue = [
     Cal: "Cal : 300cal",
   },
   {
-    img: "./svg/burger.png",
+    img: "./image/burger.png",
     Name: "Name : burger",
     QLT: "QLT : 1",
     QTY: "QTY : Bad",
@@ -28,7 +30,7 @@ let predefinedValue = [
   },
 
   {
-    img: "./svg/carrot.png",
+    img: "./image/carrot.png",
     Name: "Name : carrot",
     QLT: "QLT : 12213",
     QTY: "QTY : Good",
@@ -36,7 +38,7 @@ let predefinedValue = [
     Cal: "Cal : 401230cal",
   },
   {
-    img: "./svg/fish.png",
+    img: "./image/fish.png",
     Name: "Name : Fish",
     QLT: "QLT : 3",
     QTY: "QTY : GOOD",
@@ -45,7 +47,7 @@ let predefinedValue = [
   },
 
   {
-    img: "./svg/egg.png",
+    img: "./image/egg.png",
     Name: "Name : Egg",
     QLT: "QLT : 123",
     QTY: "QTY : Good",
@@ -81,8 +83,8 @@ const navbar = (props) => {
   return (
     <nav className={navClass}>
       <div className={classes.settingItems}>
-        <div className={classes.settingItem}></div>
-        <div className={classes.settingItem}></div>
+        <WIFI></WIFI>
+        <Dark></Dark>
       </div>
       <div className={classes.foodItems}>{foodList}</div>
     </nav>

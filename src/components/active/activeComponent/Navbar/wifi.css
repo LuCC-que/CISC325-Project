@@ -1,0 +1,128 @@
+.icon {
+  padding: 10%;
+  margin-top: 10%;
+  height: 80%;
+  width: 100%;
+}
+
+.frame2 {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 60px #686868;
+}
+
+.subHeader {
+  position: absolute;
+  font-size: xx-large;
+  left: 5%;
+  top: 5%;
+}
+
+.qrCodeText {
+  position: absolute;
+  font-size: xx-large;
+  right: 10%;
+  top: 25%;
+}
+
+.qrCode {
+  position: absolute;
+  right: 9%;
+  top: 35%;
+  max-width: 25%;
+  max-height: 45%;
+}
+
+.innerFrame1 {
+  width: 50%;
+  height: 7%;
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #dfe6f0;
+  margin: auto;
+}
+
+.innerText {
+  margin-left: 3%;
+  padding: 10px;
+  text-align: left;
+  font-size: x-large;
+}
+.imgB248 {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-image: url(./image/lock1.png);
+  background-size: cover;
+  right: 8%;
+  bottom: 25%;
+}
+.innerFrame2 {
+  width: 50%;
+  height: 7%;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #dfe6f0;
+}
+
+.innerFrame3 {
+  width: 50%;
+  height: 7%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #dfe6f0;
+}
+
+.innerFrame4 {
+  width: 50%;
+  height: 7%;
+  position: absolute;
+  top: 65%;
+  left: 5%;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #dfe6f0;
+}
+
+.innerFrame5 {
+  width: 50%;
+  height: 7%;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  background-color: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #dfe6f0;
+}
+
+.frame4 {
+  width: 10%;
+  height: 85%;
+  position: absolute;
+  top: 8%;
+  right: 5%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 60px #dfe6f0;
+}
+
+.returnButton {
+  font-size: x-large;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
