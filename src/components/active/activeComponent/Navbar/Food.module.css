@@ -8,7 +8,7 @@
 }
 .text {
   visibility: hidden;
-  color: aliceblue;
+  color: transparent;
 }
 
 .foodExpand {

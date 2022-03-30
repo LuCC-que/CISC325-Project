@@ -5,7 +5,7 @@ import FoodRec from "./FoodRecommandation";
 
 import NotiExpand from "../ContainerComponent/NotificationExpand";
 import TempExpand from "../ContainerComponent/TempertureExpand";
-import { useState, useReducer } from "react";
+import { useState } from "react";
 
 const SubContainer = (props) => {
   const [display, setDisplay] = useState("");
