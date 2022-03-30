@@ -9,6 +9,7 @@
   width: 5vw;
   transition: 200ms;
   z-index: 1;
+  box-shadow: 0 110px 60px #E2ECF9;
 }
 
 .navbarExpand {
