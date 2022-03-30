@@ -14,8 +14,9 @@ const NotiExpand = () => {
           flexDirection: "column",
           justifyContent: "space-between",
           alignItems: "center",
-          height: "120%",
+          height: "140%",
           paddingTop: "2%",
+          paddingBottom: "2%",
         }}
       >
         <div className="eme">

@@ -5,6 +5,7 @@ import FoodRec from "./FoodRecommandation";
 
 import NotiExpand from "../ContainerComponent/NotificationExpand";
 import TempExpand from "../ContainerComponent/TempertureExpand";
+import FoodrecExpand from "../ContainerComponent/FoodrecExpand";
 import { useState } from "react";
 
 const SubContainer = (props) => {
@@ -37,6 +38,7 @@ const SubContainer = (props) => {
         <div className={classes.ExpandContent}>
           {display === "Noti" && <NotiExpand></NotiExpand>}
           {display === "temp" && <TempExpand></TempExpand>}
+          {display === "FoodRec" && <FoodrecExpand></FoodrecExpand>}
         </div>
         <div
           className={classes.returnToHome}
