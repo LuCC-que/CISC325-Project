@@ -11,7 +11,7 @@ const WIFI = (props) => {
   return (
     <Fragment>
       <div className={classes.settingItem} onClick={wifiClick}>
-        <img src={require("./image/wifilogo.png")} className="icon"></img>
+        <img src={require("./image/wifiLogo.png")} className="icon"></img>
       </div>
       {wifi && (
         <div className={classes.backdrop} onClick={wifiClick}>
@@ -24,6 +24,7 @@ const WIFI = (props) => {
               <div className="innerText">
                 <strong>BELL248</strong>
                 <div className="imgB248"></div>
+                <div className="strongSignal"></div>
               </div>
             </div>
 
@@ -31,27 +32,31 @@ const WIFI = (props) => {
               <div className="innerText">
                 <strong>BELL741</strong>
                 <div className="imgB248"></div>
+                <div className="mediumSignal"></div>
               </div>
             </div>
 
             <div className="innerFrame3">
               <div className="innerText">
-                <strong>VIRGIN280</strong>
+                <strong>COGECO280</strong>
                 <div className="imgB248"></div>
+                <div className="strongSignal"></div>
               </div>
             </div>
 
             <div className="innerFrame4">
               <div className="innerText">
-                <strong>VIRGIN829</strong>
+                <strong>COGECO829</strong>
                 <div className="imgB248"></div>
+                <div className="mediumSignal"></div>
               </div>
             </div>
 
             <div className="innerFrame5">
               <div className="innerText">
-                <strong>VIRGIN999</strong>
+                <strong>COGECO999</strong>
                 <div className="imgB248"></div>
+                <div className="lowSignal"></div>
               </div>
             </div>
 

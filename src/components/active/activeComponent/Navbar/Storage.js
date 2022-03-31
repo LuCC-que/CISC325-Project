@@ -15,7 +15,7 @@ const Storage = (props) => {
   return (
     <Fragment>
       <div className={classes.settingItem} onClick={StorageClick}>
-        <img src={require("./image/wifilogo.png")} className="icon"></img>
+        <img src={require("./image/wifiLogo.png")} className="icon"></img>
       </div>
       {Storage && (
         <div className={classes.backdrop} onClick={StorageClick}>
