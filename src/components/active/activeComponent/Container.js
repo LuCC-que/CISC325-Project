@@ -28,7 +28,7 @@ const Container = (props) => {
       return fmt;
     };
     setInterval(
-      "document.getElementById('dateTimeHome').innerHTML = (new Date()).format('hh:mm:ss');",
+      "document.getElementById('dateTimeActive').innerHTML = (new Date()).format('hh:mm:ss');",
       1000
     );
   }, []);
@@ -36,7 +36,7 @@ const Container = (props) => {
     <div className={classes.container} onClick={props.onClicking}>
       <header className={classes.headerdisplay} onClick={props.onClicking}>
         <strong>
-          <div id="dateTimeHome"></div>
+          <div id="dateTimeActive"></div>
         </strong>
 
         <div className="greeting">

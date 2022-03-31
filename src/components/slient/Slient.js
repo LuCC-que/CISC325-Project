@@ -138,7 +138,7 @@ const Slient = (props) => {
         return fmt;
       };
       setInterval(
-        "document.getElementById('dateTime').innerHTML = (new Date()).format('hh:mm:ss');",
+        "document.getElementById('dateTimeSilent').innerHTML = (new Date()).format('hh:mm:ss');",
         1000
       );
   }, []);

@@ -74,12 +74,33 @@ body {
   margin: 6%;
 }
 
+.foodRe{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 6%;
+}
+
 .fridgeImage {
   width: 30%;
   height: 75px;
   background-color: #fff;
   border-radius: 12px;
 }
+
+.foodImage{
+  width: 400px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 12px;}
+
+.foodImage3{
+  width: 400px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 12px;
+} 
 
 .fridgeVal {
   display: flex;

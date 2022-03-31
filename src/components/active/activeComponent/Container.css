@@ -3,15 +3,15 @@ body {
 }
 
 /* used to let current time on the contre of the screen*/
-#dateTime {
+#dateTimeSlient {
   position: absolute;
   text-align: center;
-  top: 0.5%;
+  top: 2%;
   right: 46%;
   font-size: xx-large;
 }
 
-#dateTimeHome {
+#dateTimeActive {
   position: absolute;
   text-align: center;
   top: 1%;
