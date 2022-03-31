@@ -3,7 +3,8 @@ body {
 }
 
 .silent {
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
+  background-image: url('img/sunset-horizon-clean-sky-nature.png');
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -45,12 +46,10 @@ body {
   /* text-shadow: 0 0 2px #000000; */
 }
 
-#dateTime {
-  position: absolute;
-  text-align: center;
-  padding-top: 1%;
-  right: 46%;
-  font-size: xx-large;
+#dateTimeSilent {
+  /* text-align: center; */
+  /* padding-top: 10%; */
+  font-size: 1000%;
 }
 
 .wifi {

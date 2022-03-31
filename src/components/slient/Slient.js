@@ -150,7 +150,8 @@ const Slient = (props) => {
           Mon 2022.03.01
         </a>
         <a href="#home" className="title">
-          <div id="dateTime"></div>
+          {/* <div id="dateTime"></div> */}
+          <div className="tempDigit">F:-10°C | R:5°C</div>
         </a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +173,7 @@ const Slient = (props) => {
             <div className="sec"></div>
           </div>
         </div>
-
+        <div id="dateTimeSilent"></div>
         <div className="weather">
           <div className="weather-container">
             <div className="weather-icon">
@@ -220,7 +221,7 @@ const Slient = (props) => {
       </div>
       <div className="footer">
         <div className="temperature">
-          <div className="tempDigit">F:-10°C | R:5°C</div>
+          {/* <div className="tempDigit">F:-10°C | R:5°C</div> */}
         </div>
       </div>
     </div>
