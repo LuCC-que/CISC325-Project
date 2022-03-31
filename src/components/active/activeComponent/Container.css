@@ -11,6 +11,14 @@ body {
   font-size: xx-large;
 }
 
+#dateTimeHome {
+  position: absolute;
+  text-align: center;
+  top: 1%;
+  right: 46%;
+  font-size: xx-large;
+}
+
 /*appear to the left of the screen*/
 .greeting {
   position: absolute;

@@ -65,6 +65,35 @@
   right: 8%;
   bottom: 25%;
 }
+.strongSignal{
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  background-image: url(./image/wifiLogo.png);
+  background-size: cover;
+  right:5%;
+  bottom: 38%;
+}
+
+.mediumSignal{
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  background-image: url(./image/mediumSignal.jpg);
+  background-size: cover;
+  right:4%;
+  bottom: 38%;
+}
+
+.lowSignal{
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  background-image: url(./image/lowSignal.jpg);
+  background-size: cover;
+  right:4%;
+  bottom: 38%;
+}
 .innerFrame2 {
   width: 50%;
   height: 7%;
