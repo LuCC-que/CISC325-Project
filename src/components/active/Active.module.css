@@ -241,6 +241,10 @@ body {
   padding: 3%;
 }
 
+.shoppingListImg {
+  width: 100%;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 70px 0;

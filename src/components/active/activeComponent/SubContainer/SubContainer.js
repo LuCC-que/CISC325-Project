@@ -63,7 +63,7 @@ const SubContainer = (props) => {
       <div className={classes.item}>
         <div className={classes.notePad}>
           <h1 className={classes.boxText}> NotePad</h1>
-          <div className={classes.listBox1}>
+          {/* <div className={classes.listBox1}>
             <h2 className={classes.listTitle}>Shopping List 1</h2>
             <table>
               <tr>
@@ -108,7 +108,12 @@ const SubContainer = (props) => {
                 <td>Pepper</td>
               </tr>
             </table>
-          </div>
+          </div> */}
+          <img
+                  className={classes.shoppingListImg}
+                  src={require("../img/shoppingList.jpg")}
+                  alt=""
+                />
         </div>
       </div>
     </div>
