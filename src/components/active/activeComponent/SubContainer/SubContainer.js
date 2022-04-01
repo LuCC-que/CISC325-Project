@@ -9,6 +9,7 @@ import FoodrecExpand from "../ContainerComponent/FoodrecExpand";
 import { useState } from "react";
 
 const SubContainer = (props) => {
+  console.log(props.isDark);
   const [display, setDisplay] = useState("");
   const TempertureClickHandler = () => {
     props.onClicking();
@@ -53,16 +54,51 @@ const SubContainer = (props) => {
 
   return (
     <div className={classes.subContainer}>
-      <div className={classes.item}>
-        <Temperture onClick={TempertureClickHandler}></Temperture>
-        <Notification onClick={NotificationClickHandler}></Notification>
+      <div
+        className={classes.item}
+        style={{
+          backgroundColor: props.isDark && "#292F2A",
+        }}
+      >
+        <Temperture
+          onClick={TempertureClickHandler}
+          isDark={props.isDark}
+        ></Temperture>
+        <Notification
+          onClick={NotificationClickHandler}
+          isDark={props.isDark}
+        ></Notification>
       </div>
-      <div className={classes.item}>
-        <FoodRec onClick={FoodRecClickHandler}></FoodRec>
+      <div
+        className={classes.item}
+        style={{
+          backgroundColor: props.isDark && "#292F2A",
+        }}
+      >
+        <FoodRec onClick={FoodRecClickHandler} isDark={props.isDark}></FoodRec>
       </div>
-      <div className={classes.item}>
-        <div className={classes.notePad}>
-          <h1 className={classes.boxText}> NotePad</h1>
+      <div
+        className={classes.item}
+        style={{
+          backgroundColor: props.isDark && "#292F2A",
+        }}
+      >
+        <div
+          className={classes.notePad}
+          style={{
+            backgroundColor: props.isDark && "#B9B9B9",
+            boxShadow: props.isDark && "none",
+          }}
+        >
+          <h1
+            className={classes.boxText}
+            style={{
+              backgroundColor: props.isDark && "#B9B9B9",
+            }}
+          >
+            {" "}
+            NotePad
+          </h1>
           {/* <div className={classes.listBox1}>
             <h2 className={classes.listTitle}>Shopping List 1</h2>
             <table>
@@ -110,10 +146,10 @@ const SubContainer = (props) => {
             </table>
           </div> */}
           <img
-                  className={classes.shoppingListImg}
-                  src={require("../img/shoppingList.jpg")}
-                  alt=""
-                />
+            className={classes.shoppingListImg}
+            src={require("../img/shoppingList.jpg")}
+            alt=""
+          />
         </div>
       </div>
     </div>

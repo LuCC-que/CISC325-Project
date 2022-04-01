@@ -4,6 +4,7 @@
   width: 70px;
   border: solid black 1px;
   border-radius: 25%;
+  background-color: transparent;
 }
 
 .backdrop {

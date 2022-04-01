@@ -10,6 +10,8 @@ const Active = (props) => {
 
   const [isExpand, setExpand] = useState("");
 
+  const [isDark, setDark] = useState(false);
+
   useEffect(() => {
     const identifier = setTimeout(() => {
       console.log("asdsad");
@@ -29,13 +31,23 @@ const Active = (props) => {
     setExpand("");
   };
 
+  const darkOnClick = () => {
+    console.log("the dark is" + isDark);
+    setDark(!isDark);
+  };
+
   if (!isActived) {
     return <Slient onClick={silentOnclick}></Slient>;
   }
   return (
     <div className={classes.active}>
-      <Navbar value={isExpand} onSetExpand={setExpand}></Navbar>
-      <Container onClicking={silentOnclick}></Container>
+      <Navbar
+        value={isExpand}
+        onSetExpand={setExpand}
+        darkOnClick={darkOnClick}
+        isDark={isDark}
+      ></Navbar>
+      <Container onClicking={silentOnclick} isDark={isDark}></Container>
     </div>
   );
 };

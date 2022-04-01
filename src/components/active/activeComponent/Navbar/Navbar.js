@@ -82,10 +82,16 @@ const navbar = (props) => {
   console.log(foodList);
 
   return (
-    <nav className={navClass}>
+    <nav
+      className={navClass}
+      style={{
+        backgroundColor: props.isDark && "#B9B9B9",
+        boxShadow: props.isDark && "none",
+      }}
+    >
       <div className={classes.settingItems}>
         <WIFI></WIFI>
-        <Dark></Dark>
+        <Dark darkOnClick={props.darkOnClick}></Dark>
       </div>
       <div className={classes.foodItems}>
         {foodList}

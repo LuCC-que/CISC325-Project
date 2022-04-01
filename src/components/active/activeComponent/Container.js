@@ -34,23 +34,38 @@ const Container = (props) => {
   }, []);
   return (
     <div className={classes.container} onClick={props.onClicking}>
-      <header className={classes.headerdisplay} onClick={props.onClicking}>
+      <header
+        className={classes.headerdisplay}
+        onClick={props.onClicking}
+        style={{ backgroundColor: props.isDark && "black" }}
+      >
         <strong>
-          <div id="dateTimeActive"></div>
+          <div
+            id="dateTimeActive"
+            style={{ color: props.isDark && "white" }}
+          ></div>
         </strong>
 
         <div className="greeting">
-          <p>
+          <p style={{ color: props.isDark && "white" }}>
             <strong>Hello User</strong>
           </p>
         </div>
 
         <div className="searchBar">
           <div className="imgSearch"></div>
-          <input type="text" name="firstName" placeholder="Search" id="searchContent"/>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Search"
+            id="searchContent"
+          />
         </div>
       </header>
-      <SubContainer onClicking={props.onClicking}></SubContainer>
+      <SubContainer
+        onClicking={props.onClicking}
+        isDark={props.isDark}
+      ></SubContainer>
     </div>
   );
 };

@@ -6,20 +6,6 @@ import { useEffect } from "react";
 
 const Slient = (props) => {
   useEffect(() => {
-    const hr = document.querySelector(".hr");
-    const min = document.querySelector(".min");
-    const sec = document.querySelector(".sec");
-    setInterval(() => {
-      let today = new Date();
-      let hours = today.getHours() * 30;
-      let mins = today.getMinutes() * 6;
-      let secs = today.getSeconds() * 6;
-
-      hr.style.transform = `rotateZ(${hours + mins / 12}deg)`;
-      min.style.transform = `rotateZ(${mins}deg)`;
-      sec.style.transform = `rotateZ(${secs}deg)`;
-    });
-
     // Tutorial by http://youtube.com/CodeExplained
 
     // SELECT ELEMENTS
@@ -116,31 +102,31 @@ const Slient = (props) => {
         weather.temperature.unit = "celsius";
       }
     });
-      Date.prototype.format = function (fmt) {
-        var o = {
-          "h+": this.getHours(),
-          "m+": this.getMinutes(),
-          "s+": this.getSeconds(),
-        };
-        if (/(y+)/.test(fmt))
+    Date.prototype.format = function (fmt) {
+      var o = {
+        "h+": this.getHours(),
+        "m+": this.getMinutes(),
+        "s+": this.getSeconds(),
+      };
+      if (/(y+)/.test(fmt))
+        fmt = fmt.replace(
+          RegExp.$1,
+          (this.getFullYear() + "").substr(4 - RegExp.$1.length)
+        );
+      for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt))
           fmt = fmt.replace(
             RegExp.$1,
-            (this.getFullYear() + "").substr(4 - RegExp.$1.length)
+            RegExp.$1.length == 1
+              ? o[k]
+              : ("00" + o[k]).substr(("" + o[k]).length)
           );
-        for (var k in o)
-          if (new RegExp("(" + k + ")").test(fmt))
-            fmt = fmt.replace(
-              RegExp.$1,
-              RegExp.$1.length == 1
-                ? o[k]
-                : ("00" + o[k]).substr(("" + o[k]).length)
-            );
-        return fmt;
-      };
-      setInterval(
-        "document.getElementById('dateTimeSilent').innerHTML = (new Date()).format('hh:mm:ss');",
-        1000
-      );
+      return fmt;
+    };
+    setInterval(
+      "document.getElementById('dateTimeSilent').innerHTML = (new Date()).format('hh:mm:ss');",
+      1000
+    );
   }, []);
 
   return (
@@ -181,11 +167,9 @@ const Slient = (props) => {
         <div className="weather">
           <div className="weather-container">
             <div className="weatherLeft">
-              <div className="location">
-                -
-              </div>
+              <div className="location">-</div>
               <div className="temperature-value">
-                  - °<span>C</span>
+                - °<span>C</span>
               </div>
             </div>
             <div className="weatherRight">
@@ -196,9 +180,7 @@ const Slient = (props) => {
                   alt=""
                 />
               </div>
-              <div className="temperature-description">
-                -
-              </div>
+              <div className="temperature-description">-</div>
             </div>
           </div>
         </div>
