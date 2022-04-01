@@ -103,6 +103,40 @@ body {
   justify-content: center;
 }
 
+.ovalBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  /* shake */
+  /* cursor: pointer; */
+}
+
+.ovalBell {
+  max-width: 7%;
+}
+
+/* shake animation */
+.ovalBox:hover .ovalBell{
+  animation: shake 1s forwards;
+}
+
+@keyframes shake {
+  10%{
+    transform: rotate(15deg);
+  }
+  20%{
+    transform: rotate(-15deg);
+  }
+  30%{
+    transform: rotate(15deg);
+  }
+  50%{
+    transform: rotate(0deg);
+  }
+}
+
 .oval {
   margin: 1rem;
   width: 30rem;
@@ -119,9 +153,8 @@ body {
 }
 
 .ovalTitle {
-  /* background-color: #fdfdfd; */
-  width: 80%;
   margin-left: 10%;
+  margin-right: 5%;
   font-size: 200%;
   display: flex;
   align-items: center;

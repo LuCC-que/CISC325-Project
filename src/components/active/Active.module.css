@@ -80,6 +80,14 @@ body {
   align-items: center;
   justify-content: space-evenly;
   margin: 6%;
+
+  /* zoom-in effect */
+  margin-left: 13%;
+  width: 400px;
+  overflow: hidden;
+  outline-offset: -8px;
+  position: relative;
+  border-radius: 12px;
 }
 
 .fridgeImage {
@@ -94,6 +102,19 @@ body {
   height: 225px;
   background-color: #fff;
   border-radius: 12px;
+
+  /* zoom-in */
+  transition: transform .75s;
+  object-fit: cover;
+  inset: 0;
+}
+
+.foodRe:hover .foodImage{
+  transform: scale(1.15);
+}
+
+.foodRe:hover .foodImage3{
+  transform: scale(1.15);
 }
 
 .foodImage3 {
@@ -101,6 +122,10 @@ body {
   height: 100px;
   background-color: #fff;
   border-radius: 12px;
+
+  /* zoom in effect */
+  transition: transform .75s;
+  object-fit: cover;
 }
 
 .fridgeVal {
