@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap');
+
 body {
   margin: 0%;
 }
@@ -52,6 +54,7 @@ body {
   /* text-align: center; */
   /* padding-top: 10%; */
   font-size: 1000%;
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
 }
 
 .wifi {

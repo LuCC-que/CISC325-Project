@@ -24,9 +24,9 @@ const Slient = (props) => {
 
     // SELECT ELEMENTS
     const iconElement = document.querySelector(".weatherImg"); //weathericon
-    const tempElement = document.querySelector(".temperature-value p");
-    const descElement = document.querySelector(".temperature-description p");
-    const locationElement = document.querySelector(".location p");
+    const tempElement = document.querySelector(".temperature-value");
+    const descElement = document.querySelector(".temperature-description");
+    const locationElement = document.querySelector(".location");
     const notificationElement = document.querySelector(".notification");
 
     // App data
@@ -182,12 +182,10 @@ const Slient = (props) => {
           <div className="weather-container">
             <div className="weatherLeft">
               <div className="location">
-                <p>-</p>
+                -
               </div>
               <div className="temperature-value">
-                <p>
                   - °<span>C</span>
-                </p>
               </div>
             </div>
             <div className="weatherRight">
@@ -199,7 +197,7 @@ const Slient = (props) => {
                 />
               </div>
               <div className="temperature-description">
-                <p>-</p>
+                -
               </div>
             </div>
           </div>
