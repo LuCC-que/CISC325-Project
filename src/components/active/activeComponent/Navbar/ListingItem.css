@@ -1,0 +1,43 @@
+.listingItem {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 80%;
+  height: 10%;
+  background-color: aqua;
+  display: flex;
+}
+
+.left-lt {
+  background-color: blueviolet;
+  height: 100%;
+  width: 10%;
+}
+
+.right-lt {
+  background-color: brown;
+  height: 100%;
+  width: 88.5%;
+}
+
+.name-lt {
+  width: 1.5%;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  margin: 0;
+  text-align: center;
+}
+
+.item-info-lt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+
+.item-info-p {
+  margin-bottom: 20px;
+}

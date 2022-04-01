@@ -1,0 +1,72 @@
+body {
+  margin: 0%;
+}
+
+/* used to let current time on the contre of the screen*/
+#dateTimeSlient {
+  position: absolute;
+  text-align: center;
+  top: 2%;
+  right: 46%;
+  font-size: xx-large;
+}
+
+#dateTimeActive {
+  position: absolute;
+  text-align: center;
+  top: 1%;
+  right: 46%;
+  font-size: xx-large;
+}
+
+/*appear to the left of the screen*/
+.greeting {
+  position: absolute;
+  left: 20%;
+  font-size: 20px;
+}
+
+.imgSearch {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-image: url(./img/search.png);
+  background-size: cover;
+  background-position: center;
+  top: 13%;
+  left: 3%;
+}
+
+.searchBar {
+  position: absolute;
+  right: 200px;
+  top: 1.5%;
+}
+
+#searchContent{
+  border-width: 1px;
+  border-radius: 15px;
+  height: 30px;
+  width: 250px;
+  text-align: center;
+}
+
+.qrCode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  width: 700px;
+  border-radius: 100px;
+  background-color: rgb(255, 255, 255);
+}
+.QRcode img {
+  border-radius: 100px;
+}
+.headerdisplay {
+  background-color: white;
+}
+
+.button {
+  background-color: rgb(236, 228, 228);
+}

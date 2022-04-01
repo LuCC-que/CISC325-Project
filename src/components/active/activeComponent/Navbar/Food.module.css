@@ -1,0 +1,36 @@
+.food {
+  background-color: transparent;
+  height: 70px;
+  width: 70px;
+  border: solid black 1px;
+  border-radius: 25%;
+  transition: 500ms;
+}
+.text {
+  visibility: hidden;
+  color: transparent;
+}
+
+.foodExpand {
+  position: relative;
+  left: 45px;
+  height: 160px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+
+.foodExpand .text {
+  visibility: visible;
+  color: black;
+  transition: 2250ms;
+}
+
+.icon {
+  padding: 20%;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,22 @@
+.settingItem {
+  background-color: #fff;
+  height: 70px;
+  width: 70px;
+  border: solid black 1px;
+  border-radius: 25%;
+}
+
+.backdrop {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(53, 53, 53, 0.5);
+  height: 120vh;
+  width: 120vw;
+  margin-left: auto;
+  margin-right: auto;
+  top: -0.025%;
+  left: 0;
+  right: 0;
+}

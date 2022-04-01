@@ -1,0 +1,111 @@
+.otherRecipe {
+  position: absolute;
+  font-size: large;
+  left: 42%;
+  bottom: 19%;
+}
+
+.step1Image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(./img/step1.png);
+  background-size: cover;
+  border-radius: 30px;
+  left: 50%;
+  top: 15%;
+}
+
+.step2Image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(./img/step2.png);
+  background-size: cover;
+  border-radius: 30px;
+  left: 50%;
+  top: 35%;
+}
+
+.step3Image {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(./img/step3.png);
+  background-size: cover;
+  border-radius: 30px;
+  left: 50%;
+  top: 55%;
+}
+
+.recipe1 {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background-image: url(./img/recipe1.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  left: 5%;
+  bottom: 40%;
+}
+
+.otherRecipe1 {
+  width: 350px;
+  height: 120px;
+  position: absolute;
+  background-image: url(./img/salad.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  left: 10%;
+  bottom: 3%;
+}
+
+.otherRecipe2 {
+  width: 350px;
+  height: 120px;
+  position: absolute;
+  background-image: url(./img/banana.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  right: 10%;
+  bottom: 3%;
+}
+
+.step1 {
+  position: absolute;
+  font-size: large;
+  left: 60%;
+  top: 15%;
+}
+
+.step2 {
+  position: absolute;
+  font-size: large;
+  left: 60%;
+  top: 37%;
+}
+
+.step3 {
+  position: absolute;
+  font-size: large;
+  left: 60%;
+  top: 57%;
+}
+
+.frame4 {
+  width: 10%;
+  height: 80%;
+  position: absolute;
+  top: 11%;
+  right: 5%;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 60px #dfe6f0;
+}
+
+.returnButton {
+  font-size: x-large;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}

@@ -1,0 +1,51 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 5vw;
+  transition: 200ms;
+  z-index: 1;
+  box-shadow: 0 110px 60px #E2ECF9;
+}
+
+.navbarExpand {
+  width: 10vw;
+  align-items: flex-start;
+  padding-left: 8px;
+  transition: 500ms;
+  z-index: 1;
+}
+.settingItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 15.5%;
+  width: 80px;
+  margin-bottom: 5%;
+  background-color: #FFF;
+}
+
+.settingItem {
+  background-color: rgb(255, 255, 255);
+  height: 70px;
+  width: 70px;
+  padding: 10%;
+  border: solid black 1px;
+  border-radius: 25%;
+}
+
+.foodItems {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 4%;
+  background-color: #FFF;
+  height: 80%;
+  width: 80px;
+}
