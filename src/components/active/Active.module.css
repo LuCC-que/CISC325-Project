@@ -56,7 +56,6 @@ body {
   box-shadow: 0 0 60px #e2ecf9;
 }
 
-
 .boxText {
   margin-left: 10%;
 }
@@ -74,7 +73,7 @@ body {
   margin: 6%;
 }
 
-.foodRe{
+.foodRe {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,18 +88,19 @@ body {
   border-radius: 12px;
 }
 
-.foodImage{
+.foodImage {
   width: 400px;
-  height: 250px;
+  height: 225px;
   background-color: #fff;
-  border-radius: 12px;}
+  border-radius: 12px;
+}
 
-.foodImage3{
+.foodImage3 {
   width: 400px;
   height: 100px;
   background-color: #fff;
   border-radius: 12px;
-} 
+}
 
 .fridgeVal {
   display: flex;
@@ -108,7 +108,7 @@ body {
   width: 30%;
   height: 75px;
   padding: 3%;
-  background-color: #E3F2FD;
+  background-color: #e3f2fd;
   border-radius: 12px;
   font-size: 200%;
   font-weight: bold;
@@ -122,7 +122,7 @@ body {
 }
 
 .notiBox {
-  background-color: #E3F2FD;
+  background-color: #e3f2fd;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -138,7 +138,7 @@ body {
 }
 
 .alarmBox {
-  background-color: #F8BAC1;
+  background-color: #f8bac1;
 }
 
 .alarmImage {
@@ -170,9 +170,9 @@ body {
   height: 90%;
   width: 10%;
   border-radius: 15px;
-  background-color: #FFF;
+  background-color: #fff;
   background-position: center;
-  box-shadow: 0 0 60px #E2ECF9;
+  box-shadow: 0 0 60px #e2ecf9;
 }
 
 .imgHome {
@@ -201,7 +201,7 @@ body {
 .foodRecommandation {
   height: 90%;
   width: 85%;
-  background-color: #fff;  
+  background-color: #fff;
   box-shadow: 0 0 60px #e2ecf9;
   border-radius: 15px;
 }
@@ -213,7 +213,7 @@ body {
 .notePad {
   height: 90%;
   width: 80%;
-  background-color: #fff;  
+  background-color: #fff;
   box-shadow: 0 0 60px #e2ecf9;
   border-radius: 15px;
 }
@@ -222,7 +222,7 @@ body {
   margin: 9.5%;
   height: 40%;
   width: 80%;
-  background-color: #E3F2FD;
+  background-color: #e3f2fd;
   border-radius: 15px;
   box-shadow: 5px 5px 7px #e2ecf9;
 }
@@ -231,7 +231,7 @@ body {
   margin: 9.5%;
   height: 35%;
   width: 80%;
-  background-color: #E3F2FD;
+  background-color: #e3f2fd;
   border-radius: 15px;
   box-shadow: 5px 5px 7px #e2ecf9;
 }
