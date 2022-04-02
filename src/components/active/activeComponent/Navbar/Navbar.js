@@ -70,7 +70,11 @@ const Navbar = (props) => {
   });
 
   const expandClick = (id) => {
-    props.onSetExpand(id);
+    if (id === props.value) {
+      props.onSetExpand("");
+    } else {
+      props.onSetExpand(id);
+    }
   };
   let navClass = "";
   if (!props.value) {

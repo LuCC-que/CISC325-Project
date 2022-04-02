@@ -8,7 +8,9 @@ const ListingItem = (props) => {
       </div>
       <div className="mid-lt">
         <div className="item-info-lt">
-          <span className="item-info-p">{props.itemInfo.Name}</span>
+          <span className="item-info-p" style={{ fontStyle: "bold" }}>
+            {props.itemInfo.Name}
+          </span>
           <span className="item-info-p"> Quality : {props.itemInfo.QLT}</span>
           <span className="item-info-p"> Weight : {props.itemInfo.Weight}</span>
           <span className="item-info-p"> Cal : {props.itemInfo.Cal}</span>
