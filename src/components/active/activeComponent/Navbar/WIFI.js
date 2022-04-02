@@ -5,6 +5,11 @@ import { Fragment, useState } from "react";
 const WIFI = (props) => {
   const [wifi, setWifi] = useState(false);
   const wifiClick = () => {
+    if (!wifi) {
+      props.playOn();
+    } else {
+      props.playOff();
+    }
     setWifi(!wifi);
   };
 

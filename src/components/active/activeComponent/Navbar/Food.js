@@ -4,6 +4,7 @@ const Food = (props) => {
   const foodClick = () => {
     props.onClick(props.id);
     console.log(props.id);
+    props.playOn();
   };
 
   let foodClass = "";

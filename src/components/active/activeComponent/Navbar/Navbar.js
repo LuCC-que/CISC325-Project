@@ -3,6 +3,7 @@ import WIFI from "./WIFI";
 import Dark from "./Dark";
 import Food from "./Food";
 import Storage from "./Storage.js";
+import useSound from "use-sound";
 
 let predefinedValue = [
   {
@@ -57,7 +58,16 @@ let predefinedValue = [
   },
 ];
 
-const navbar = (props) => {
+const Navbar = (props) => {
+  const [playOn] = useSound(require("./sound/On1.mp3"), { volume: 0.6 });
+  const [playOff] = useSound(require("./sound/Off1.mp3"), { volume: 0.6 });
+  const [toDark] = useSound(require("./sound/switchToDark.mp3"), {
+    volume: 0.6,
+  });
+  const [toSun] = useSound(require("./sound/switchToSun.mp3"), {
+    volume: 0.6,
+  });
+
   const expandClick = (id) => {
     props.onSetExpand(id);
   };
@@ -76,6 +86,7 @@ const navbar = (props) => {
         value={props.value}
         onClick={expandClick}
         itemInfo={food}
+        playOn={playOn}
       />
     );
   });
@@ -90,16 +101,25 @@ const navbar = (props) => {
       }}
     >
       <div className={classes.settingItems}>
-        <WIFI></WIFI>
-        <Dark darkOnClick={props.darkOnClick} isDark={props.isDark}></Dark>
+        <WIFI playOn={playOn} playOff={playOff}></WIFI>
+        <Dark
+          darkOnClick={props.darkOnClick}
+          isDark={props.isDark}
+          toDark={toDark}
+          toSun={toSun}
+        ></Dark>
       </div>
       <span className={classes.navbarDivder}>Food List</span>
       <div className={classes.foodItems}>
         {foodList}
-        <Storage predefinedValue={predefinedValue}></Storage>
+        <Storage
+          predefinedValue={predefinedValue}
+          playOn={playOn}
+          playOff={playOff}
+        ></Storage>
       </div>
     </nav>
   );
 };
 
-export default navbar;
+export default Navbar;

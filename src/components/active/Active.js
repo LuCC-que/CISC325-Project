@@ -3,6 +3,7 @@ import Navbar from "./activeComponent/Navbar/Navbar";
 import Container from "./activeComponent/Container";
 import Slient from "../slient/Slient";
 import { useEffect, useState } from "react";
+import useSound from "use-sound";
 
 const Active = (props) => {
   const [isActived, setActive] = useState(false);
@@ -11,6 +12,26 @@ const Active = (props) => {
   const [isExpand, setExpand] = useState("");
 
   const [isDark, setDark] = useState(false);
+
+  const [playOn] = useSound(require("./activeComponent/Navbar/sound/On1.mp3"), {
+    volume: 0.6,
+  });
+  const [playOff] = useSound(
+    require("./activeComponent/Navbar/sound/Off1.mp3"),
+    { volume: 0.6 }
+  );
+  const [toDark] = useSound(
+    require("./activeComponent/Navbar/sound/switchToDark.mp3"),
+    {
+      volume: 0.6,
+    }
+  );
+  const [toSun] = useSound(
+    require("./activeComponent/Navbar/sound/switchToSun.mp3"),
+    {
+      volume: 0.6,
+    }
+  );
 
   useEffect(() => {
     const identifier = setTimeout(() => {
@@ -33,6 +54,11 @@ const Active = (props) => {
 
   const darkOnClick = () => {
     console.log("the dark is" + isDark);
+    if (isDark) {
+      toSun();
+    } else {
+      toDark();
+    }
     setDark(!isDark);
   };
 
@@ -47,7 +73,12 @@ const Active = (props) => {
         darkOnClick={darkOnClick}
         isDark={isDark}
       ></Navbar>
-      <Container onClicking={silentOnclick} isDark={isDark}></Container>
+      <Container
+        onClicking={silentOnclick}
+        isDark={isDark}
+        playOn={playOn}
+        playOff={playOff}
+      ></Container>
     </div>
   );
 };

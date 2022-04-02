@@ -13,21 +13,25 @@ const SubContainer = (props) => {
   const [display, setDisplay] = useState("");
   const TempertureClickHandler = () => {
     props.onClicking();
+    props.playOn();
     setDisplay("temp");
   };
 
   const NotificationClickHandler = () => {
     props.onClicking();
+    props.playOn();
     setDisplay("Noti");
   };
 
   const FoodRecClickHandler = () => {
     props.onClicking();
+    props.playOn();
     setDisplay("FoodRec");
   };
 
   const returnToHomeClickHandler = () => {
     props.onClicking();
+    props.playOff();
     setDisplay("");
   };
 

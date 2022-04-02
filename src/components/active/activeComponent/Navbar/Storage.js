@@ -5,6 +5,11 @@ import ListingItem from "./ListingItem";
 const Storage = (props) => {
   const [Storage, setStorge] = useState(false);
   const StorageClick = () => {
+    if (!Storage) {
+      props.playOn();
+    } else {
+      props.playOff();
+    }
     setStorge(!Storage);
   };
   let id = 1;

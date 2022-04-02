@@ -65,6 +65,8 @@ const Container = (props) => {
       <SubContainer
         onClicking={props.onClicking}
         isDark={props.isDark}
+        playOn={props.playOn}
+        playOff={props.playOff}
       ></SubContainer>
     </div>
   );
