@@ -13,7 +13,7 @@ const Notification = (props) => {
       }}
     >
       <h1 className={classes.boxText}> Notification</h1>
-      <h4 className={classes.boxSubText}> Notify food conditions</h4>
+      <h4 className={classes.boxSubText}> Notify food and system conditions</h4>
       <div className={classes.notiBoxList}>
         <div className={`${classes.alarmBox} ${classes.notiBox}`}>
           <img src={alarm} className={classes.alarmImage} />
