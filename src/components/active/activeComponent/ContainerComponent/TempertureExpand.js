@@ -36,7 +36,6 @@ const TempExpand = (props) => {
       }}
     >
       <div id="sub-title">Temperture</div>
-      <div id="sub-title-light">Temperture adjustment</div>
 
       <div className="wrap">
         <input

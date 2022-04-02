@@ -70,7 +70,7 @@ const NotiExpand = (props) => {
           paddingBottom: "2%",
         }}
       >
-        <h1 style={{ position: "relative", left: "-35%", top: "1.5%" }}>
+        <h1 style={{ position: "relative", left: "-36%", top: "1.5%" }}>
           Notification
         </h1>
 

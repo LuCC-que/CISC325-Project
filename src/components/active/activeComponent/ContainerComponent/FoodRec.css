@@ -1,41 +1,41 @@
 .otherRecipe {
   position: absolute;
-  font-size: large;
-  left: 42%;
-  bottom: 19%;
+  font-size: medium;
+  left: 43%;
+  bottom: 20%;
 }
 
 .step1Image {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   position: absolute;
   background-image: url(./img/step1.png);
   background-size: cover;
   border-radius: 30px;
-  left: 50%;
-  top: 15%;
+  left: 53%;
+  top: 19%;
 }
 
 .step2Image {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   position: absolute;
   background-image: url(./img/step2.png);
   background-size: cover;
   border-radius: 30px;
-  left: 50%;
-  top: 35%;
+  left: 53%;
+  top: 39%;
 }
 
 .step3Image {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 65px;
   position: absolute;
   background-image: url(./img/step3.png);
   background-size: cover;
   border-radius: 30px;
-  left: 50%;
-  top: 55%;
+  left: 53%;
+  top: 59%;
 }
 
 .recipe1 {
@@ -45,51 +45,51 @@
   background-image: url(./img/recipe1.jpg);
   background-size: cover;
   border-radius: 30px;
-  left: 5%;
-  bottom: 40%;
+  left: 8%;
+  bottom: 38%;
 }
 
 .otherRecipe1 {
-  width: 350px;
+  width: 450px;
   height: 120px;
   position: absolute;
   background-image: url(./img/salad.jpg);
   background-size: cover;
   border-radius: 30px;
-  left: 10%;
-  bottom: 3%;
+  left: 12%;
+  bottom: 5%;
 }
 
 .otherRecipe2 {
-  width: 350px;
+  width: 450px;
   height: 120px;
   position: absolute;
   background-image: url(./img/banana.jpg);
   background-size: cover;
   border-radius: 30px;
   right: 10%;
-  bottom: 3%;
+  bottom: 5%;
 }
 
 .step1 {
   position: absolute;
-  font-size: large;
+  font-size: x-large;
   left: 60%;
-  top: 15%;
+  top: 18%;
 }
 
 .step2 {
   position: absolute;
-  font-size: large;
+  font-size: x-large;
   left: 60%;
-  top: 37%;
+  top: 40%;
 }
 
 .step3 {
   position: absolute;
-  font-size: large;
+  font-size: x-large;
   left: 60%;
-  top: 57%;
+  top: 61%;
 }
 
 .frame4 {
@@ -108,4 +108,12 @@
   position: absolute;
   top: 45%;
   left: 30%;
+}
+
+.foodRecHeader {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  font-size: large;
+  font-weight: bold;
 }

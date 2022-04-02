@@ -15,45 +15,37 @@
 
 #sub-title {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  font-size: xx-large;
+  top: 8%;
+  left: 7%;
+  font-size: 35px;
   font-weight: bold;
 }
 
-#sub-title-light {
-  position: relative;
-  top: 18%;
-  left: 10%;
-  font-size: 15px;
-  color: rgb(192, 192, 192);
-}
-
 .img-refri {
-  height: 100px;
-  width: 200px;
+  height: 125px;
+  width: 250px;
   position: absolute;
   background-image: url(./img/refrigerator.png);
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   bottom: 12%;
-  left: 22%;
+  left: 17.5%;
 }
 
 .refri {
   position: absolute;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   bottom: 6%;
-  left: 25%;
+  left: 21%;
 }
 
 .wrap {
   width: 300px;
   position: relative;
   top: 45%;
-  left: 30%;
+  left: 27%;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
@@ -98,21 +90,21 @@
 }
 
 #selectValue {
-  width: 48px;
+  width: 80px;
   height: 48px;
-  right: -15px;
+  right: -32px;
   position: absolute;
-  bottom: 40px;
+  bottom: 50px;
   background: #72EFDD;
   border-radius: 6px;
   text-align: center;
   line-height: 45px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   transform: rotate(90deg);
 }
 
-#selectValue::after {
+/* #selectValue::after {
   content: "";
   border-left: 17px solid #72EFDD;
   border-top: 24px solid #fff;
@@ -120,36 +112,36 @@
   position: absolute;
   bottom: 0;
   right: -14px;
-}
+} */
 
 /*
   frezzer css
 */
 .img-freezer {
-  height: 100px;
-  width: 200px;
+  height: 125px;
+  width: 250px;
   position: absolute;
   background-image: url(./img/freezer.png);
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   bottom: 12%;
-  left: 62.5%;
+  left: 63.5%;
 }
 
 .freezer {
   position: absolute;
-  font-size: large;
+  font-size: x-large;
   font-weight: bold;
   bottom: 6%;
-  left: 67.5%;
+  left: 69.5%;
 }
 
 .wrapF {
   width: 300px;
   position: relative;
   top: 42%;
-  left: 70%;
+  left: 73%;
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
@@ -194,21 +186,21 @@
 }
 
 #selectValueF {
-  width: 70px;
+  width: 80px;
   height: 48px;
-  right: -27px;
+  right: -32px;
   position: absolute;
   bottom: 50px;
   background: #48BFE3;
   border-radius: 6px;
   text-align: center;
   line-height: 45px;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   transform: rotate(90deg);
 }
 
-#selectValueF::after {
+/* #selectValueF::after {
   content: "";
   border-left: 18px solid #48BFE3;
   border-top: 24px solid #fff;
@@ -216,4 +208,4 @@
   position: absolute;
   bottom: 0;
   right: -14px;
-}
+} */

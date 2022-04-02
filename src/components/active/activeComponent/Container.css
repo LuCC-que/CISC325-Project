@@ -49,6 +49,7 @@ body {
   height: 30px;
   width: 250px;
   text-align: center;
+  font-size: medium;
 }
 
 .qrCode {

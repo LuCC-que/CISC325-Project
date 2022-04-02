@@ -10,7 +10,7 @@ const FoodrecExpand = (props) => {
         boxShadow: props.isDark && "none",
       }}
     >
-      <div className="header">
+      <div className="foodRecHeader">
         <h1>Recipes</h1>
       </div>
       <div className="otherRecipe">
@@ -35,7 +35,7 @@ const FoodrecExpand = (props) => {
         <strong>Add salt, pepper and some fruits</strong>
       </div>
       <div className="step3">
-        <strong>Mix them, and drink 300ml water</strong>
+        <strong>Mix them together with favorite sauce</strong>
       </div>
     </div>
   );

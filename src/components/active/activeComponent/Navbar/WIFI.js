@@ -16,7 +16,7 @@ const WIFI = (props) => {
   return (
     <Fragment>
       <div className={classes.settingItem} onClick={wifiClick}>
-        <img src={require("./image/wifilogo.png")} className="icon"></img>
+        <img src={require("./image/wifiLogo.png")} className="icon"></img>
       </div>
       {wifi && (
         <div className={classes.backdrop} onClick={wifiClick}>
