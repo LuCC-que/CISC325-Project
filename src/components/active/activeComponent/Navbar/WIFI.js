@@ -20,7 +20,13 @@ const WIFI = (props) => {
       </div>
       {wifi && (
         <div className={classes.backdrop} onClick={wifiClick}>
-          <div className="frame2">
+          <div
+            className="frame2"
+            style={{
+              backgroundColor: props.isDark && "#B9B9B9",
+              boxShadow: props.isDark && "none",
+            }}
+          >
             <div className="subHeader">
               <strong>Select a WiFi from list</strong>
             </div>

@@ -1,9 +1,15 @@
 import "./TempertureExpand.css";
 import "./FoodRec.css";
 
-const FoodrecExpand = () => {
+const FoodrecExpand = (props) => {
   return (
-    <div className="frame">
+    <div
+      className="frame"
+      style={{
+        backgroundColor: props.isDark && "#B9B9B9",
+        boxShadow: props.isDark && "none",
+      }}
+    >
       <div className="header">
         <h1>Recipes</h1>
       </div>

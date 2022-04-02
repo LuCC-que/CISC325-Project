@@ -6,25 +6,45 @@ const predefinedValue = [
   {
     img: "./img/warning.png",
     type: "eme",
-    msg: "Freezer tempature is abnormal",
+    msg: "Salmon has spoiled",
   },
   {
     img: "./img/warning.png",
     type: "eme",
-    msg: "aslkdhksla;hdjlks ad",
+    msg: "Freezer temperture is abnormal",
   },
   {
     img: "./img/warning.png",
-    type: "notib",
-    msg: "fdg sfdg fdsg",
+    type: "eme",
+    msg: "Banana has rotten",
   },
   {
-    img: "./img/warning.png",
+    img: "./img/wifi-disconnect.jpg",
     type: "notib",
-    msg: "dsafads f",
+    msg: "wifi is disconnected",
+  },
+  {
+    img: "./img/setting-gear.png",
+    type: "notib",
+    msg: "System updated 1.0.12",
+  },
+  {
+    img: "./img/setting-gear.png",
+    type: "notib",
+    msg: "Notepad updated 4.1.12",
+  },
+  {
+    img: "./img/setting-gear.png",
+    type: "notib",
+    msg: "Recipes recommandation update r3.0.14",
+  },
+  {
+    img: "./img/setting-gear.png",
+    type: "notib",
+    msg: "New feautures bundle updated v7.8.1",
   },
 ];
-const NotiExpand = () => {
+const NotiExpand = (props) => {
   let id = 0;
   const notificationItems = predefinedValue.map((Item) => {
     return <NotificationItem itemInfo={Item} key={id++}></NotificationItem>;
@@ -39,6 +59,8 @@ const NotiExpand = () => {
         display: "flex",
         justifyContent: "center",
         overflow: "scroll",
+        backgroundColor: props.isDark && "#B9B9B9",
+        boxShadow: props.isDark && "none",
       }}
     >
       <div

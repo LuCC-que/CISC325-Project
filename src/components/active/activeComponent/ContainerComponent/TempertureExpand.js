@@ -1,7 +1,7 @@
 import "./TempertureExpand.css";
 import { useEffect } from "react";
 
-const TempExpand = () => {
+const TempExpand = (props) => {
   useEffect(() => {
     var range = document.getElementById("range");
     var thumb = document.getElementById("thumb");
@@ -28,7 +28,13 @@ const TempExpand = () => {
   }, []);
 
   return (
-    <div className="frame">
+    <div
+      className="frame"
+      style={{
+        backgroundColor: props.isDark && "#B9B9B9",
+        boxShadow: props.isDark && "none",
+      }}
+    >
       <div id="sub-title">Temperture</div>
       <div id="sub-title-light">Temperture adjustment</div>
 

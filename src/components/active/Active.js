@@ -14,22 +14,22 @@ const Active = (props) => {
   const [isDark, setDark] = useState(false);
 
   const [playOn] = useSound(require("./activeComponent/Navbar/sound/On1.mp3"), {
-    volume: 0.6,
+    volume: 0.8,
   });
   const [playOff] = useSound(
     require("./activeComponent/Navbar/sound/Off1.mp3"),
-    { volume: 0.6 }
+    { volume: 0.8 }
   );
   const [toDark] = useSound(
     require("./activeComponent/Navbar/sound/switchToDark.mp3"),
     {
-      volume: 0.6,
+      volume: 0.8,
     }
   );
   const [toSun] = useSound(
     require("./activeComponent/Navbar/sound/switchToSun.mp3"),
     {
-      volume: 0.6,
+      volume: 0.8,
     }
   );
 

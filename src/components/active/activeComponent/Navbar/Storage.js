@@ -44,6 +44,8 @@ const Storage = (props) => {
               justifyContent: "center",
               width: "25%",
               marginLeft: "25%",
+              backgroundColor: props.isDark && "#B9B9B9",
+              boxShadow: props.isDark && "none",
             }}
           >
             <div

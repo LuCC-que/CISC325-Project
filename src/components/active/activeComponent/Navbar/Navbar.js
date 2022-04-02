@@ -59,13 +59,14 @@ let predefinedValue = [
 ];
 
 const Navbar = (props) => {
-  const [playOn] = useSound(require("./sound/On1.mp3"), { volume: 0.6 });
-  const [playOff] = useSound(require("./sound/Off1.mp3"), { volume: 0.6 });
+  const [pop] = useSound(require("./sound/soundEffect.mp3"), { volume: 0.2 });
+  const [playOn] = useSound(require("./sound/On1.mp3"), { volume: 0.8 });
+  const [playOff] = useSound(require("./sound/Off1.mp3"), { volume: 0.8 });
   const [toDark] = useSound(require("./sound/switchToDark.mp3"), {
-    volume: 0.6,
+    volume: 0.8,
   });
   const [toSun] = useSound(require("./sound/switchToSun.mp3"), {
-    volume: 0.6,
+    volume: 0.8,
   });
 
   const expandClick = (id) => {
@@ -86,7 +87,7 @@ const Navbar = (props) => {
         value={props.value}
         onClick={expandClick}
         itemInfo={food}
-        playOn={playOn}
+        playOn={pop}
       />
     );
   });
@@ -101,7 +102,7 @@ const Navbar = (props) => {
       }}
     >
       <div className={classes.settingItems}>
-        <WIFI playOn={playOn} playOff={playOff}></WIFI>
+        <WIFI playOn={playOn} playOff={playOff} isDark={props.isDark}></WIFI>
         <Dark
           darkOnClick={props.darkOnClick}
           isDark={props.isDark}
@@ -116,6 +117,7 @@ const Navbar = (props) => {
           predefinedValue={predefinedValue}
           playOn={playOn}
           playOff={playOff}
+          isDark={props.isDark}
         ></Storage>
       </div>
     </nav>

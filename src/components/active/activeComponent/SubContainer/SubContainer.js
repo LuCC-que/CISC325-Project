@@ -39,15 +39,35 @@ const SubContainer = (props) => {
 
   if (display !== "") {
     return (
-      <div className={classes.Expand}>
-        <div className={classes.ExpandContent}>
-          {display === "Noti" && <NotiExpand></NotiExpand>}
-          {display === "temp" && <TempExpand></TempExpand>}
-          {display === "FoodRec" && <FoodrecExpand></FoodrecExpand>}
+      <div
+        className={classes.Expand}
+        style={{
+          backgroundColor: props.isDark && "#292F2A",
+        }}
+      >
+        <div
+          className={classes.ExpandContent}
+          style={{
+            backgroundColor: props.isDark && "#292F2A",
+          }}
+        >
+          {display === "Noti" && (
+            <NotiExpand isDark={props.isDark}></NotiExpand>
+          )}
+          {display === "temp" && (
+            <TempExpand isDark={props.isDark}></TempExpand>
+          )}
+          {display === "FoodRec" && (
+            <FoodrecExpand isDark={props.isDark}></FoodrecExpand>
+          )}
         </div>
         <div
           className={classes.returnToHome}
           onClick={returnToHomeClickHandler}
+          style={{
+            backgroundColor: props.isDark && "#B9B9B9",
+            boxShadow: props.isDark && "none",
+          }}
         >
           <div className={classes.imgHome}></div>
           <div className={classes.textHome}>Home</div>
