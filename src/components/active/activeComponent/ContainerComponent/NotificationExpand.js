@@ -31,17 +31,12 @@ const predefinedValue = [
   {
     img: "./img/setting-gear.png",
     type: "notib",
-    msg: "Notepad updated 4.1.12",
+    msg: "Notepad updated n4.1.12",
   },
   {
     img: "./img/setting-gear.png",
     type: "notib",
-    msg: "Recipes recommandation update r3.0.14",
-  },
-  {
-    img: "./img/setting-gear.png",
-    type: "notib",
-    msg: "New feautures bundle updated v7.8.1",
+    msg: "Recipes recommandation updated r3.0.14",
   },
 ];
 const NotiExpand = (props) => {
