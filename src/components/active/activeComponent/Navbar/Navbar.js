@@ -8,7 +8,7 @@ let predefinedValue = [
   {
     img: "./image/apple.png",
     Name: "Apple",
-    QTY: "300",
+    QTY: "5",
     QLT: "Good",
     Weight: "3g",
     Cal: "400cal",
@@ -16,7 +16,7 @@ let predefinedValue = [
   {
     img: "./image/bread.png",
     Name: "Bread",
-    QTY: "300",
+    QTY: "30",
     QLT: "Bad",
     Weight: "300g",
     Cal: "300cal",
@@ -24,7 +24,7 @@ let predefinedValue = [
   {
     img: "./image/burger.png",
     Name: "Burger",
-    QTY: "300",
+    QTY: "3",
     QLT: "Good",
     Weight: "33g",
     Cal: "41200cal",
@@ -33,7 +33,7 @@ let predefinedValue = [
   {
     img: "./image/carrot.png",
     Name: "Carrot",
-    QTY: "300",
+    QTY: "5",
     QLT: "Good",
     Weight: "33224g",
     Cal: "401230cal",
@@ -41,7 +41,7 @@ let predefinedValue = [
   {
     img: "./image/fish.png",
     Name: "Fish",
-    QTY: "300",
+    QTY: "3",
     QLT: "Good",
     Weight: "3g",
     Cal: "300cal",
@@ -50,7 +50,7 @@ let predefinedValue = [
   {
     img: "./image/egg.png",
     Name: "Egg",
-    QTY: "300",
+    QTY: "7",
     QLT: "Bad",
     Weight: "3g",
     Cal: "400cal",
@@ -91,8 +91,9 @@ const navbar = (props) => {
     >
       <div className={classes.settingItems}>
         <WIFI></WIFI>
-        <Dark darkOnClick={props.darkOnClick}></Dark>
+        <Dark darkOnClick={props.darkOnClick} isDark={props.isDark}></Dark>
       </div>
+      <span className={classes.navbarDivder}>Food List</span>
       <div className={classes.foodItems}>
         {foodList}
         <Storage predefinedValue={predefinedValue}></Storage>

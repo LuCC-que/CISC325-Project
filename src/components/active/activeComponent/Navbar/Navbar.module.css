@@ -40,6 +40,11 @@
   align-items: center;
   margin-top: 4%;
   background-color: transparent;
-  height: 80%;
+  height: 75%;
   width: 80px;
+}
+
+.navbarDivder {
+  position: relative;
+  top: 15px;
 }

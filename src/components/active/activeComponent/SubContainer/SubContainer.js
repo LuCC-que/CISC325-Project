@@ -52,6 +52,10 @@ const SubContainer = (props) => {
     );
   }
 
+  const shoppingList = props.isDark
+    ? "shoppingListDark.jpg"
+    : "shoppingList.jpg";
+
   return (
     <div className={classes.subContainer}>
       <div
@@ -147,7 +151,7 @@ const SubContainer = (props) => {
           </div> */}
           <img
             className={classes.shoppingListImg}
-            src={require("../img/shoppingList.jpg")}
+            src={require(`../img/${shoppingList}`)}
             alt=""
           />
         </div>
