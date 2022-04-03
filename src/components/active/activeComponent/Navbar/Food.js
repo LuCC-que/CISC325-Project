@@ -18,7 +18,13 @@ const Food = (props) => {
   console.log(props.itemInfo.img);
 
   return (
-    <div className={foodClass} onClick={foodClick}>
+    <div
+      className={foodClass}
+      onClick={foodClick}
+      style={{
+        backgroundColor: props.itemInfo.QLT == "Bad" && "rgb(284, 186, 193)",
+      }}
+    >
       {!extend && (
         <img
           src={require(`${props.itemInfo.img}`)}
