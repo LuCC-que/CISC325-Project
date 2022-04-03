@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import classes from "./Setting.module.css";
 import ListingItem from "./ListingItem";
-import Scrollbars from "react-custom-scrollbars/lib/Scrollbars";
 
 const Storage = (props) => {
   const [Storage, setStorge] = useState(false);
@@ -37,33 +36,31 @@ const Storage = (props) => {
       </div>
       {Storage && (
         <div className={classes.backdrop} onClick={StorageClick}>
-          <Scrollbars style={{}}>
+          <div
+            className="frame2"
+            style={{
+              overflow: "scroll",
+              display: "flex",
+              justifyContent: "center",
+              width: "25%",
+              marginLeft: "25%",
+              backgroundColor: props.isDark && "#B9B9B9",
+              boxShadow: props.isDark && "none",
+            }}
+          >
             <div
-              className="frame2"
               style={{
-                overflow: "scroll",
+                width: "80%",
+                height: "120%",
                 display: "flex",
-                justifyContent: "center",
-                width: "25%",
-                marginLeft: "25%",
-                backgroundColor: props.isDark && "#B9B9B9",
-                boxShadow: props.isDark && "none",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent: "space-evenly",
               }}
             >
-              <div
-                style={{
-                  width: "80%",
-                  height: "120%",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "space-evenly",
-                }}
-              >
-                {foodList}
-              </div>
+              {foodList}
             </div>
-          </Scrollbars>
+          </div>
         </div>
       )}
     </Fragment>
