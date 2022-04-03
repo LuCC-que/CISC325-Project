@@ -2,7 +2,7 @@
   position: absolute;
   font-size: medium;
   left: 43%;
-  bottom: 20%;
+  bottom: 18%;
 }
 
 .step1Image {
@@ -13,7 +13,7 @@
   background-size: cover;
   border-radius: 30px;
   left: 53%;
-  top: 19%;
+  top: 16%;
 }
 
 .step2Image {
@@ -35,7 +35,7 @@
   background-size: cover;
   border-radius: 30px;
   left: 53%;
-  top: 59%;
+  top: 61%;
 }
 
 .recipe1 {
@@ -57,7 +57,7 @@
   background-size: cover;
   border-radius: 30px;
   left: 12%;
-  bottom: 5%;
+  bottom: 4%;
 }
 
 .otherRecipe2 {
@@ -68,14 +68,14 @@
   background-size: cover;
   border-radius: 30px;
   right: 10%;
-  bottom: 5%;
+  bottom: 4%;
 }
 
 .step1 {
   position: absolute;
   font-size: x-large;
   left: 60%;
-  top: 18%;
+  top: 15%;
 }
 
 .step2 {
@@ -89,7 +89,85 @@
   position: absolute;
   font-size: x-large;
   left: 60%;
-  top: 61%;
+  top: 63%;
+}
+
+.recipePepper {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipePepper.png);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  left: 69%;
+  top: 47%;
+}
+
+.recipePepperCopy {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipePepper.png);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  left: 20%;
+  top: 64%;
+}
+
+.recipeFruit {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipeFruit.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  left: 80%;
+  top: 47%;
+}
+
+.recipeFruitCopy {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipeFruit.jpg);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  left: 25%;
+  top: 64%;
+}
+
+.recipeFish {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipeFish.png);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  right: 22%;
+  top: 26%;
+}
+
+.recipeFishCopy {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  background-image: url(./img/recipeFish.png);
+  background-size: cover;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  left: 30%;
+  top: 64%;
 }
 
 .frame4 {
@@ -112,8 +190,8 @@
 
 .foodRecHeader {
   position: absolute;
-  top: 5%;
-  left: 7%;
+  top: 3%;
+  left: 10%;
   font-size: large;
   font-weight: bold;
 }
