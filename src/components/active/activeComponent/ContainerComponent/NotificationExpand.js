@@ -11,13 +11,14 @@ const predefinedValue = [
   {
     img: "./img/warning.png",
     type: "eme",
-    msg: "Freezer temperture is abnormal",
+    msg: "Steak has rotten",
   },
   {
     img: "./img/warning.png",
     type: "eme",
-    msg: "Banana has rotten",
+    msg: "Freezer temperture is abnormal",
   },
+
   {
     img: "./img/wifi-disconnect.jpg",
     type: "notib",
