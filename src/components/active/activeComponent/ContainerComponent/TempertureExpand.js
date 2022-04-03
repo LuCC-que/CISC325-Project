@@ -35,7 +35,7 @@ const TempExpand = (props) => {
         boxShadow: props.isDark && "none",
       }}
     >
-      <div id="sub-title">Temperture</div>
+      <div id="sub-title">Temperature</div>
 
       <div className="wrap">
         <input
