@@ -17,11 +17,11 @@ const Notification = (props) => {
       <div className={classes.notiBoxList}>
         <div className={`${classes.alarmBox} ${classes.notiBox}`}>
           <img src={alarm} className={classes.alarmImage} />
-          <div className={classes.notiContent}>Salmon</div>
+          <div className={classes.notiContent}>Salmon...</div>
         </div>
         <div className={`${classes.alarmBox} ${classes.notiBox}`}>
           <img src={alarm} className={classes.alarmImage} />
-          <div className={classes.notiContent}>Freezer</div>
+          <div className={classes.notiContent}>Steak...</div>
         </div>
         <div className={classes.notiBox}>
           {/* <img src={setting} className={classes.alarmImage}/> */}

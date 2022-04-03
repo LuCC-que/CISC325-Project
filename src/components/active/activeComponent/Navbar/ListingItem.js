@@ -11,7 +11,15 @@ const ListingItem = (props) => {
           <span className="item-info-p" style={{ fontWeight: "bold" }}>
             {props.itemInfo.Name}
           </span>
-          <span className="item-info-p"> Quality : {props.itemInfo.QLT}</span>
+          <span
+            className="item-info-p"
+            style={{
+              backgroundColor:
+                props.itemInfo.QLT == "Bad" && "rgb(284, 186, 193)",
+            }}
+          >
+            Quality : {props.itemInfo.QLT}
+          </span>
           <span className="item-info-p"> Weight : {props.itemInfo.Weight}</span>
           <span className="item-info-p"> Cal : {props.itemInfo.Cal}</span>
         </div>
