@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CISC325-project/static/css/main.4b64a204.css",
-    "main.js": "/CISC325-project/static/js/main.a8c62c41.js",
+    "main.js": "/CISC325-project/static/js/main.a024e69f.js",
     "static/js/845.bbb9f1e9.chunk.js": "/CISC325-project/static/js/845.bbb9f1e9.chunk.js",
     "static/media/salad.png": "/CISC325-project/static/media/salad.869fcba0cd271df04524.png",
     "static/media/sunset-horizon-clean-sky-nature.png": "/CISC325-project/static/media/sunset-horizon-clean-sky-nature.793ba8343279a2074292.png",
@@ -35,11 +35,11 @@
     "static/media/setting.svg": "/CISC325-project/static/media/setting.db0ebe953158b583f039a26a8cd87113.svg",
     "index.html": "/CISC325-project/index.html",
     "main.4b64a204.css.map": "/CISC325-project/static/css/main.4b64a204.css.map",
-    "main.a8c62c41.js.map": "/CISC325-project/static/js/main.a8c62c41.js.map",
+    "main.a024e69f.js.map": "/CISC325-project/static/js/main.a024e69f.js.map",
     "845.bbb9f1e9.chunk.js.map": "/CISC325-project/static/js/845.bbb9f1e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4b64a204.css",
-    "static/js/main.a8c62c41.js"
+    "static/js/main.a024e69f.js"
   ]
 }
