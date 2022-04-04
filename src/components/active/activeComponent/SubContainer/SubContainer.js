@@ -128,7 +128,7 @@ const SubContainer = (props) => {
             NotePad
           </h1>
           <h4 className={classes.boxSubText}>
-            Write your message for today here!
+            Write or draw your message for today here!
           </h4>
 
           <img

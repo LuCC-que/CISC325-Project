@@ -104,16 +104,16 @@ body {
   border-radius: 12px;
 
   /* zoom-in */
-  transition: transform .75s;
+  transition: transform 0.75s;
   object-fit: cover;
   inset: 0;
 }
 
-.foodRe:hover .foodImage{
+.foodRe:hover .foodImage {
   transform: scale(1.15);
 }
 
-.foodRe:hover .foodImage3{
+.foodRe:hover .foodImage3 {
   transform: scale(1.15);
 }
 
@@ -124,7 +124,7 @@ body {
   border-radius: 12px;
 
   /* zoom in effect */
-  transition: transform .75s;
+  transition: transform 0.75s;
   object-fit: cover;
 }
 
@@ -270,6 +270,7 @@ body {
 
 .shoppingListImg {
   width: 100%;
+  height: 81%;
 }
 
 table {
