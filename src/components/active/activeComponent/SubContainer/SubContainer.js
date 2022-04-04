@@ -127,52 +127,10 @@ const SubContainer = (props) => {
             {" "}
             NotePad
           </h1>
-          {/* <div className={classes.listBox1}>
-            <h2 className={classes.listTitle}>Shopping List 1</h2>
-            <table>
-              <tr>
-                <td>Chocolate</td>
-                <td>Strawberries</td>
-              </tr>
-              <tr>
-                <td>Butter</td>
-                <td>Ketchup</td>
-              </tr>
-              <tr>
-                <td>Milk</td>
-                <td>Bacon</td>
-              </tr>
-              <tr>
-                <td>Honey</td>
-                <td>Ice Cream</td>
-              </tr>
-              <tr>
-                <td>Tomatoes</td>
-                <td>Carrots</td>
-              </tr>
-            </table>
-          </div>
-          <div className={classes.listBox2}>
-            <h2 className={classes.listTitle}>Shopping List 2</h2>
-            <table>
-              <tr>
-                <td>Onion</td>
-                <td>Broccoli</td>
-              </tr>
-              <tr>
-                <td>Eggs</td>
-                <td>Cucumber</td>
-              </tr>
-              <tr>
-                <td>Cheese</td>
-                <td>Celery</td>
-              </tr>
-              <tr>
-                <td>Mushroom</td>
-                <td>Pepper</td>
-              </tr>
-            </table>
-          </div> */}
+          <h4 className={classes.boxSubText}>
+            Write your message for today here!
+          </h4>
+
           <img
             className={classes.shoppingListImg}
             src={require(`../img/${shoppingList}`)}

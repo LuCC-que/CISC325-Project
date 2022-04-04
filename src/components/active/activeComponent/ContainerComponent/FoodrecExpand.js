@@ -24,10 +24,34 @@ const FoodrecExpand = (props) => {
       <div className="salmon"></div>
       <div className="recipeFish"></div>
       <div className="recipeFruit"></div>
-      <div className="recipePepper"></div>
-      <div className="recipeFishCopy"></div>
-      <div className="recipeFruitCopy"></div>
-      <div className="recipePepperCopy"></div>
+      <div
+        className="recipePepper"
+        style={{
+          backgroundColor: props.isDark && "#B9B9B9",
+          boxShadow: props.isDark && "none",
+        }}
+      ></div>
+      <div
+        className="recipeFishCopy"
+        style={{
+          backgroundColor: props.isDark && "#B9B9B9",
+          boxShadow: props.isDark && "none",
+        }}
+      ></div>
+      <div
+        className="recipeFruitCopy"
+        style={{
+          backgroundColor: props.isDark && "#B9B9B9",
+          boxShadow: props.isDark && "none",
+        }}
+      ></div>
+      <div
+        className="recipePepperCopy"
+        style={{
+          backgroundColor: props.isDark && "#B9B9B9",
+          boxShadow: props.isDark && "none",
+        }}
+      ></div>
 
       <div className="step1">
         <strong>
