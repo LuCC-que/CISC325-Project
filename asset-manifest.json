@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CISC325-project/static/css/main.1297922d.css",
-    "main.js": "/CISC325-project/static/js/main.915643e1.js",
+    "main.css": "/CISC325-project/static/css/main.4b64a204.css",
+    "main.js": "/CISC325-project/static/js/main.a8c62c41.js",
     "static/js/845.bbb9f1e9.chunk.js": "/CISC325-project/static/js/845.bbb9f1e9.chunk.js",
     "static/media/salad.png": "/CISC325-project/static/media/salad.869fcba0cd271df04524.png",
     "static/media/sunset-horizon-clean-sky-nature.png": "/CISC325-project/static/media/sunset-horizon-clean-sky-nature.793ba8343279a2074292.png",
@@ -14,9 +14,9 @@
     "static/media/shoppingListDark.jpg": "/CISC325-project/static/media/shoppingListDark.d4f7684e733f05075c48.jpg",
     "static/media/alarm.png": "/CISC325-project/static/media/alarm.915659b22890c92fd22a.png",
     "static/media/warning.png": "/CISC325-project/static/media/warning.5cdad3295b61a3141d40.png",
+    "static/media/recipePepper.png": "/CISC325-project/static/media/recipePepper.527e9e1f924033243315.png",
     "static/media/R.png": "/CISC325-project/static/media/R.e96b48fe33c311fe800e.png",
     "static/media/F.png": "/CISC325-project/static/media/F.91e43deb28f12742ff26.png",
-    "static/media/wifiLogo.png": "/CISC325-project/static/media/wifiLogo.57bcf636bf6cabdc8e5a.png",
     "static/media/wifilogo.png": "/CISC325-project/static/media/wifilogo.57bcf636bf6cabdc8e5a.png",
     "static/media/soundEffect.mp3": "/CISC325-project/static/media/soundEffect.96227fa0860061375293.mp3",
     "static/media/step3.png": "/CISC325-project/static/media/step3.3f333658f3b847634930.png",
@@ -29,18 +29,17 @@
     "static/media/On1.mp3": "/CISC325-project/static/media/On1.bcae2f8d9e154cd13d86.mp3",
     "static/media/step1.png": "/CISC325-project/static/media/step1.c818e16874161b24cd0a.png",
     "static/media/restaurant.png": "/CISC325-project/static/media/restaurant.ca482020a991f1ade248.png",
-    "static/media/egg.png": "/CISC325-project/static/media/egg.51571963ee57db536edd.png",
     "static/media/switchToDark.mp3": "/CISC325-project/static/media/switchToDark.21a44de5d98e11497c60.mp3",
     "static/media/switchToSun.mp3": "/CISC325-project/static/media/switchToSun.b702e5752219c87c855e.mp3",
     "static/media/homepage.png": "/CISC325-project/static/media/homepage.fe2991215289ac11cb2f.png",
     "static/media/setting.svg": "/CISC325-project/static/media/setting.db0ebe953158b583f039a26a8cd87113.svg",
     "index.html": "/CISC325-project/index.html",
-    "main.1297922d.css.map": "/CISC325-project/static/css/main.1297922d.css.map",
-    "main.915643e1.js.map": "/CISC325-project/static/js/main.915643e1.js.map",
+    "main.4b64a204.css.map": "/CISC325-project/static/css/main.4b64a204.css.map",
+    "main.a8c62c41.js.map": "/CISC325-project/static/js/main.a8c62c41.js.map",
     "845.bbb9f1e9.chunk.js.map": "/CISC325-project/static/js/845.bbb9f1e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1297922d.css",
-    "static/js/main.915643e1.js"
+    "static/css/main.4b64a204.css",
+    "static/js/main.a8c62c41.js"
   ]
 }
